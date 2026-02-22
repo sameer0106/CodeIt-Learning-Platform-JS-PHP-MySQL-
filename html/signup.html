@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/login-signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Register</h1>
+        <form id="registrationForm">
+            <label for="newUsername">Set Username:</label>
+            <input type="text" id="newUsername" placeholder="Enter a username" required>
+
+            <label for="newPassword">Set Password:</label>
+            <input type="password" id="newPassword" placeholder="Enter a password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="registration-message" class="success"></p>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const newUsername = document.getElementById("newUsername").value;
+            const newPassword = document.getElementById("newPassword").value;
+
+            // Save credentials to localStorage (simulate a database)
+            localStorage.setItem("username", newUsername);
+            localStorage.setItem("password", newPassword);
+
+            document.getElementById("registration-message").innerText =
+                "Registration Successful! Please login using your new credentials.";
+
+            // Redirect to login page after registration
+            setTimeout(() => {
+                window.location.href = "login.html";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Certificate Maker Tool 2023 - Hyper Coding</title>
+    <link rel="stylesheet" href="../css/certificate.css">
+    <script src="../javascript/certificate.js"></script>
+    <style>
+         .signature-section {
+            position: absolute;
+            bottom: 18px;
+            right: 177px;
+            text-align: center; /* Adjust horizontal position */
+        }
+        .signature-section {
+            position: absolute;
+            bottom: 18px;
+            right: 177px;
+            text-align: center;
+        }
+        .signature-section img {
+            width: 150px; /* Signature image size */
+            display: block;
+        }
+        .signature-section1 img {
+            width: 124px; /* Signature image size */
+            display: block;
+        }
+        .signature-section p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .signature-section1 p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="cform">
+
+
+        <div id="chform">
+            <h1 style="text-align: center; margin-top: 20px;">E-Certificate Creator Form</h1>
+            <br>
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;">Enter
+                Your Name*</p>
+            <input type="text" id="fname" name="username" required="" placeholder="Enter Your Name...."/>
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;">Enter
+                Certificate Details*</p>
+            <input type="text" id="fdetails" name="userdetails" placeholder="Enter Your Certificate Details...." />
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;"> Enter
+                Organiser Name*</p>
+            <input type="text" id="forganisername" name="organisername" required=""
+                placeholder="Enter Your Certificate Organiser Name...." />
+            <br>
+            <br>
+            <button id="bcertificate" onclick="check()">Generate E-Certificate</button>
+           
+            <button  id="downloaddata" onclick="dcheck()">Download E-Certificate</button>
+        </div>
+
+    </div>
+
+
+    <div id="main">
+        <div id="child1">
+            <img src="../image/logo.png" alt="Favicon" class="img1">
+           <h1 id="img2">CodeIt </h1>
+            <div class="body">
+                Certificate
+            </div>
+            <div class="body2">
+                Of Participation
+            </div>
+            <h2 align="center">This is to certify that</h2>
+            <h3 id="name" align="center"></h3>
+            <hr size="bolder" />
+            <p align="center" style="font-weight: bold; font-size: large;"> For Successfully Completing </p>
+            <h4 class="details" style="text-transform: capitalize; text-align: center;"></h4>
+            <p align="center" style="font-size: larger; font-weight: bold;">We Acknowledge Your Efforts . Keep
+                Participating !</p>
+            <h5 class="organisername" style="text-align: center; font-weight: bolder; text-transform: capitalize;">
+            </h5>
+            
+           <div style="float: left">
+                <img src="../image/stamp.png" alt="" style="height: 95px; margin-left: 53px;">
+            </div>
+            <div class="m"> <img src="../image/signature.png" alt="">
+                <p style ="
+                margin: 0px -97px;
+                margin-top: 38px;"
+             >Provider</p>
+            </div>
+            <div>
+            <div class="signature-section">
+                <img src="../image/ceo-sig1.png" alt="Signature">
+                <p>Mr. Sameer Dhindhe</p>
+            </div>
+            <div class="signature-section1" style="margin-left: 737px;
+    margin-top: -102px;">
+                <img src="../image/ceo-sig2.png" alt="Signature">
+                <p>Mr. Chetan Patel</p>
+                <p3 style="margin-left: -63px;">CEOs of CodeIt</p3>
+            </div>
+            
+        </div>
+        
+        </div>
+    </div>
+   
+</body>
+</html>

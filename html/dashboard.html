@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeIt Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        background: #f4f6f9;
+      }
+
+      .navbar {
+        align-content: center;
+        height: 60px;
+        background: #2c3e50;
+        color: white;
+        
+      }
+
+      .dashboard-box {
+        background: white;
+        padding: 25px;
+        margin-top: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-card {
+        padding: 20px;
+        border-radius: 8px;
+        background: #ecf0f1;
+        margin-bottom: 20px;
+      }
+
+      .progress {
+        height: 20px;
+      }
+
+      .logout-btn{
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <h3 style="color: white; display: inline">CodeIt Dashboard</h3>
+        <button style="float: right;" onclick="goHome()" class="btn btn-primary">
+          🏠 Back to Home
+        </button>
+
+        <button onclick="logout()" class="btn btn-danger logout-btn">
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- WELCOME -->
+      <div class="dashboard-box">
+        <h2>Welcome, <span id="username">Student</span> 👋</h2>
+        <p>Continue your learning journey.</p>
+      </div>
+
+      <!-- COURSES -->
+      <div class="dashboard-box">
+        <h3>Your Courses</h3>
+
+        <!-- ML COURSE -->
+        <div class="course-card">
+          <h4>Machine Learning Course</h4>
+          <p>Progress</p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-success"
+              role="progressbar"
+              style="width: 100%"
+            >
+              Completed
+            </div>
+          </div>
+
+          <br />
+          <a href="ml-video-gallery.html" class="btn btn-primary">
+            Continue Course
+          </a>
+
+          <a href="certificate.html" class="btn btn-success">
+            View Certificate
+          </a>
+        </div>
+
+        <!-- WEB DEV COURSE -->
+        <div class="course-card">
+          <h4>Web Development</h4>
+          <p>Progress</p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-info"
+              role="progressbar"
+              style="width: 40%"
+            >
+              40% Completed
+            </div>
+          </div>
+
+          <br />
+          <a href="webDevelopment-video-gallery.html" class="btn btn-primary">
+            Continue Course
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* SHOW LOGGED USER */
+      const username = localStorage.getItem("username") || "Student";
+      document.getElementById("username").textContent = username;
+
+      /* LOGOUT FUNCTION */
+      function logout() {
+        localStorage.removeItem("username");
+        window.location.href = "index.html";
+      }
+
+      function goHome() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

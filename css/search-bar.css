@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.boxo{
+    margin-top: 0px;
+    height: 50px;
+    width: 600px;
+    justify-self: center;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: rgb(156, 190, 248);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 5px 15px rgb(78, 93, 106) ;
+}
+.boxo:hover{
+    background: aqua;
+}
+
+.boxo:hover input{
+    width: 500px;
+    
+}
+.boxo input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: black;
+}
+.fa-solid{
+    color: rgb(9, 10, 10);
+    font-size: 18px;
+    margin-right: 0%;
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Course</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/video-gallery.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<h2 class="heading">Machine Learning Course</h2>
+
+<div class="container">
+
+    <!-- MAIN VIDEO -->
+    <div class="main-video">
+        <video id="main-video" controls autoplay>
+            <source src="../videos/ml1.mp4" type="video/mp4">
+        </video>
+        <h3 class="title">Lecture 1 - Introduction</h3>
+    </div>
+
+    <!-- VIDEO PLAYLIST -->
+    <div class="video-list">
+
+        <div class="vid active" data-src="../videos/ml1.mp4" data-lec="1">
+            <video src="../videos/ml1.mp4" muted></video>
+            <div class="title">Lecture 1 - Introduction</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml2.mp4" data-lec="2">
+            <video src="../videos/ml2.mp4" muted></video>
+            <div class="title">Lecture 2 - Basics</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml3.mp4" data-lec="3">
+            <video src="../videos/ml3.mp4" muted></video>
+            <div class="title">Lecture 3 - Algorithms</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml4.mp4" data-lec="4">
+            <video src="../videos/ml4.mp4" muted></video>
+            <div class="title">Lecture 4 - Models</div>
+        </div>
+
+        <!-- Repeated videos -->
+
+        <div class="vid" data-src="../videos/ml1.mp4" data-lec="5">
+            <video src="../videos/ml1.mp4" muted></video>
+            <div class="title">Lecture 5 - Training</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml2.mp4" data-lec="6">
+            <video src="../videos/ml2.mp4" muted></video>
+            <div class="title">Lecture 6 - Evaluation</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml3.mp4" data-lec="7">
+            <video src="../videos/ml3.mp4" muted></video>
+            <div class="title">Lecture 7 - Deployment</div>
+        </div>
+
+        <div class="vid" data-src="../videos/ml4.mp4" data-lec="8">
+            <video src="../videos/ml4.mp4" muted></video>
+            <div class="title">Lecture 8 - Final Lecture</div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CERTIFICATE BUTTON -->
+<div id="certificate-button">
+    <button class="btn btn-success" id="get-certificate-btn" disabled>
+        🎓Certificate Form
+    </button>
+</div>
+
+<!-- SCRIPT -->
+<script src="../javascript/certificate-redirect.js"></script>
+
+</body>
+</html>

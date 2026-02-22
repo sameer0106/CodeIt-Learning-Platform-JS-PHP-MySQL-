@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    min-height: 100vh;
+}
+
+/* Heading */
+.heading {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    gap: 25px;
+    padding: 20px 5%;
+    align-items: flex-start;
+}
+
+/* MAIN VIDEO SECTION */
+.main-video {
+    flex: 3;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.main-video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-video .title {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* VIDEO LIST SIDEBAR */
+.video-list {
+    flex: 1.3;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    max-height: 477px;
+    overflow-y: auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Scrollbar styling */
+.video-list::-webkit-scrollbar {
+    width: 6px;
+}
+.video-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+/* Each Video Card */
+.video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #f4f6f9;
+}
+
+.video-list .vid:hover {
+    background: #dbeafe;
+    transform: translateX(3px);
+}
+
+.video-list .vid.active {
+    background: #93c5fd;
+}
+
+.video-list .vid video {
+    width: 110px;
+    height: 65px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.video-list .vid .title {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Certificate Button */
+#certificate-button {
+    text-align: center;
+    margin: 25px;
+}
+
+#get-certificate-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#get-certificate-btn:hover:enabled {
+    background: #16a34a;
+}
+
+#get-certificate-btn:disabled {
+    background: #777;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .video-list {
+        max-height: none;
+    }
+}
