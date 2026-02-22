@@ -3,6 +3,9 @@ CodeIt is a full-stack educational web application that provides course tutorial
 The platform allows users to register, log in, explore technical courses, watch learning videos, and generate participation certificates after completion.
 ---
 
+Working diagram :
+![image alt](https://github.com/sameer0106/CodeIt-Learning-Platform-JS-PHP-MySQL-/blob/8e52941c651f8bc8ecd64e062907cd6660f063da/UI%20ScreenShots/e-commerce.jpg)
+
 ## 🚀 Features
 
 ### 🔐 Authentication System
